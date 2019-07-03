@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/fromtext"
+                android:text="From:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/fromUserText"
+                android:text="John Doe"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/fromtext"
+                android:layout_alignBottom="@id/fromtext"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/toText"
+                android:layout_below="@id/fromtext"
+                android:text="To:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/toUserText"
+                android:layout_below="@id/fromUserText"
+                android:text="Jean Doe"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/toText"
+                android:paddingLeft="5dp"
+                android:layout_alignBottom="@id/toText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/transferred_credits"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:text="200" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
